@@ -1,0 +1,57 @@
+
+#second-paragraph {
+   height: 100px;
+  background-color: orange;
+  display: inline;
+}
+#third-paragraph {
+   width: 50%;
+   height: 200px;
+   padding: 50px;
+   margin: 50px;
+  background-color: pink;
+}
+
+@media screen and (max-width: 1000px) {
+    /*max-width: 1000px以下のとき*/
+    /* ここに通常のCSSを書きます。以下は一例です */
+    #first-paragraph {
+       width: 200px;
+       padding: 100px;
+      background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* 300px以下の時 */
+    /* ここに通常のCSSを書きます。以下は一例です */
+    #first-paragraph {
+       width: 200px;
+       padding: 100px;
+      background-color: orange;
+      display: none;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    /* 300px以上の時 */
+    /* ここに通常のCSSを書きます。以下は一例です */
+    #first-paragraph {
+       width: 200px;
+       padding: 100px;
+      background-color: orange;
+      display: none;
+    }
+}
+
+/* モバイルファーストのときはmin-widthを使うことが多い */
+
+.mobile {
+    color:red;
+}
+
+@media screen and (min-width: 1000px) {
+ .mobile {
+    color:blue;
+    }
+}

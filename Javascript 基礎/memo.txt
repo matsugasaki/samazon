@@ -1,0 +1,53 @@
+・配列の話
+list1 = [1,2,3]
+list1.length // 3
+1次元配列
+→list1 = 1,2,3
+→個数3
+
+list2 = [[1,2],[3,4],[5,6]]
+list2.length // 3
+2次元配列
+→list2 = [1,2],[3,4],[5,6]
+list2[0] // [1, 2]
+list2[0].length // 2
+
+list3 = [[[1,2],[3,4],[5,6]]]
+list3.length // 6
+3次元配列
+
+
+・＝の話
+数学の場合
+A=5(Aは5です）
+
+プログラムの場合は
+A=5（Aに5を入れる）
+
+===を使うと
+A===5（Aは5です）
+
+
+i++  は1プラス
+i--  は1マイナス
+
+for( let i=0; i<5; i++) {
+
+  console.log(i);
+  
+  if(i === 3) {
+    break;
+  }
+
+}
+
+// 6章の部分下記のuserは多分array（教材のミスかもしれません）
+// 配列の中身をすべて出力する関数を作成
+function output(array) {
+  for(let i=0; i<array.length; i++) {
+    console.log('名前：' + user[i][0]);
+    console.log('年齢：' + user[i][1]);
+    console.log('趣味：' + user[i][2]);
+    console.log('----------------------');
+  }
+}
